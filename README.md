@@ -10,7 +10,7 @@ Ter instalado o docker, docker-compose e composer
 
 ### Iniciar aplicação e infraestrutura docker.
 
-Após o clone do projeto entre no diretorio do mesmo (trabalhe-conosco-backend-dev) e execute os comandos abaixo.
+Após o clone do projeto entre no diretorio do mesmo (exactaworks-api-client) e execute os comandos abaixo.
 
 - composer install (Responsavél por instalar as dependências do projeto)
 - docker-compose up -d (Ele ira subir toda a infraestrutura necessária para o projeto)
@@ -56,7 +56,9 @@ Na API é possivel fazer consultas de forma performatica tanto no Mysql como no 
 
 ### Tecnologias Utilizadas no desafio.
 
-- Montagem do ambente em Docker
+- Docker
+- PHP
+- Laravel
 - Vue.js
 - Bootstrap
 
