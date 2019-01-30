@@ -1880,11 +1880,6 @@ __webpack_require__.r(__webpack_exports__);
     }).catch(function (e) {
       console.error(e);
     });
-  },
-  formatPrice: function formatPrice(value) {
-    console.log(value);
-    var val = (value / 1).toFixed(2).replace('.', ',');
-    return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
   }
 });
 
@@ -36956,9 +36951,7 @@ var render = function() {
                         return _c("tr", { key: post.id }, [
                           _c("td", [_vm._v(_vm._s(post.nome))]),
                           _vm._v(" "),
-                          _c("td", [
-                            _vm._v(_vm._s(_vm.formatPrice(post.valor)))
-                          ]),
+                          _c("td", [_vm._v(_vm._s(post.valor))]),
                           _vm._v(" "),
                           _c("td", [_vm._v(_vm._s(post.tag))]),
                           _vm._v(" "),

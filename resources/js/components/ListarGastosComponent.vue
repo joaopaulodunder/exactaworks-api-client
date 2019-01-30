@@ -17,7 +17,7 @@
                                 <tbody v-if="posts && posts.length">
                                 <tr v-for="post of posts" v-bind:key="post.id">
                                     <td>{{post.nome}}</td>
-                                    <td>{{formatPrice(post.valor)}}</td>
+                                    <td>{{post.valor}}</td>
                                     <td>{{post.tag}}</td>
                                     <td><a class="btn btn-primary" v-bind:href="'exacta/detalhe/'+ post.id" role="button">Detalhes</a></td>
                                 </tr>
@@ -49,11 +49,5 @@
                     console.error(e)
                 })
         },
-
-            formatPrice(value) {
-                let val = (value/1).toFixed(2).replace('.', ',')
-                return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
-            }
-
     }
 </script>
