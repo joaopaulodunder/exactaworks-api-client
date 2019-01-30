@@ -10,8 +10,6 @@ class Gastos extends Controller
 
     public function index()
     {
-        header("Access-Control-Allow-Origin: *");
-        header("Access-Control-Allow-Headers: Content-Type");
         $todosGastos = Gasto::all(array(
             'id',
             'nome',
